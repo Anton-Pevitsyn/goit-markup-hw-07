@@ -1,0 +1,46 @@
+.specialization-section {
+  background-color: $second-background-color;
+  text-align: center;
+  padding-bottom: 94px;
+}
+.specialization-list {
+  display: flex;
+}
+.specialization-list .item + .item {
+  margin-left: 30px;
+}
+
+.specialization-section .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.specialization-list .item {
+  position: relative;
+}
+
+.specialization-list .item-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: $specialization-title-background-color;
+}
+
+.specialization-list .item-title {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $main-title-color;
+}

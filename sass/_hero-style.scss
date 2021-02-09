@@ -1,0 +1,43 @@
+.title-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $background-section-color;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../img/background-hero.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.meam-title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  color: $main-title-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.33em;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.title-section .link {
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  color: $main-title-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+}

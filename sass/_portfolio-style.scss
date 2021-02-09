@@ -1,0 +1,123 @@
+.img-card {
+  display: block;
+}
+.portfolio-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-button-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+.portfolio-button-list .item + .item {
+  margin-left: 8px;
+}
+.portfolio-button {
+  min-width: 7px;
+  height: 38px;
+  padding: 6px 22px;
+  background-color: $background-icon-color;
+  border-radius: 4px;
+  border: 0px;
+  color: $title-color;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 250ms $animation, color 250ms $animation;
+}
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: $accent-color;
+  border: 0px;
+  color: $main-title-color;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
+}
+.portfolio-button:active {
+  background-color: $accent-color;
+  border: 0px;
+  color: $main-title-color;
+}
+
+.portfolio-card-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.portfolio-card {
+  display: block;
+  text-decoration: none;
+  width: 370px;
+  position: relative;
+  color: $main-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  transition: box-shadow 250ms $animation, transform 250ms $animation;
+}
+.portfolio-card:focus,
+.portfolio-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.card-deckription {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  background-color: $main-title-color;
+  border: 1px solid $partfolio-border-color;
+}
+.portfolio-card-list .portfolio-item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
+.portfolio-card .card-title {
+  margin-bottom: 4px;
+  color: $title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+}
+.portfolio-card-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 30px;
+}
+.card-thumd {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card .hover-transform {
+  position: absolute;
+
+  padding-top: 64px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: $hover-card-background-color;
+  transition: transform 250ms $animation;
+}
+
+.hover-transform .text-card {
+  font-weight: normal;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: $main-title-color;
+  transform: translatey(0%);
+}
+.portfolio-card:focus .hover-transform,
+.portfolio-card:hover .hover-transform {
+  transform: translatey(-100%);
+}
